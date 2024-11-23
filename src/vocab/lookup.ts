@@ -36,7 +36,7 @@ export interface LookupObjectOptions {
    */
   userAgent?: GetUserAgentOptions | string;
 
-  signal?: AbortController | null;
+  signal?: AbortSignal;
 }
 
 const handleRegexp =
