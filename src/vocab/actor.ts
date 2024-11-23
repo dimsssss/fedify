@@ -93,7 +93,7 @@ export interface GetActorHandleOptions extends NormalizeActorHandleOptions {
   userAgent?: GetUserAgentOptions | string;
   /**
    * An optional abort signal to cancel the request.
-   * @since <version>
+   * @since 1.3.0
    */
   signal?: AbortSignal | null;
 }

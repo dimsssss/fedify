@@ -35,7 +35,10 @@ export interface LookupObjectOptions {
    * @since 1.3.0
    */
   userAgent?: GetUserAgentOptions | string;
-
+  /**
+   * An optional abort signal to cancel the request.
+   * @since 1.3.0
+   */
   signal?: AbortSignal;
 }
 

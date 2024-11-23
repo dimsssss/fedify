@@ -20,8 +20,9 @@ export interface LookupWebFingerOptions {
    */
   userAgent?: GetUserAgentOptions | string;
   /**
-   * An AbortSignal to cancel the request.
+   * An optional abort signal to cancel the request.
    * @see https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal
+   * @since 1.3.0
    */
   signal?: AbortSignal | null;
 }
