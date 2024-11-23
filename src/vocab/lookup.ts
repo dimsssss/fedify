@@ -35,6 +35,8 @@ export interface LookupObjectOptions {
    * @since 1.3.0
    */
   userAgent?: GetUserAgentOptions | string;
+
+  signal?: AbortController | null;
 }
 
 const handleRegexp =
@@ -95,6 +97,7 @@ export async function lookupObject(
   if (document == null) {
     const jrd = await lookupWebFinger(identifier, {
       userAgent: options.userAgent,
+      signal: options.signal,
     });
     if (jrd?.links == null) return null;
     for (const l of jrd.links) {

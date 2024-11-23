@@ -19,6 +19,8 @@ export interface LookupWebFingerOptions {
    * the `User-Agent` header value.
    */
   userAgent?: GetUserAgentOptions | string;
+
+  signal?: AbortController | null;
 }
 
 /**
@@ -54,6 +56,7 @@ export async function lookupWebFinger(
     let response: Response;
     try {
       response = await fetch(url, {
+        signal: options?.signal,
         headers: {
           Accept: "application/jrd+json",
           "User-Agent": typeof options.userAgent === "string"

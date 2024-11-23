@@ -91,6 +91,8 @@ export interface GetActorHandleOptions extends NormalizeActorHandleOptions {
    * @since 1.3.0
    */
   userAgent?: GetUserAgentOptions | string;
+
+  signal?: AbortController | null;
 }
 
 /**
@@ -125,6 +127,7 @@ export async function getActorHandle(
   if (actorId != null) {
     const result = await lookupWebFinger(actorId, {
       userAgent: options.userAgent,
+      signal: options.signal,
     });
     if (result != null) {
       const aliases = [...(result.aliases ?? [])];
