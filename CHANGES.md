@@ -71,9 +71,6 @@ To be released.
 
  -  Let the `fedify lookup` command take multiple arguments.
     [[#173], [#186] by PGD]
- -  Let the `fedify lookup` command take multiple arguments.
-    [[#173], [#186] by PGD]
-
 
  -  Added options related to `AbortController`.
     [[#51] [#187] by PDJ]
@@ -86,8 +83,6 @@ To be released.
 [#183]: https://github.com/dahlia/fedify/pull/183
 [#186]: https://github.com/dahlia/fedify/pull/186
 
-[#173]: https://github.com/dahlia/fedify/issues/173
-[#186]: https://github.com/dahlia/fedify/pull/186
 
 Version 1.2.8
 -------------
@@ -104,6 +99,7 @@ Released on November 23, 2024.
 [#177]: https://github.com/dahlia/fedify/issues/177
 [#181]: https://github.com/dahlia/fedify/pull/181
 
+>>>>>>> 73399be (add changed to CHANGES.md)
 
 Version 1.2.7
 -------------
